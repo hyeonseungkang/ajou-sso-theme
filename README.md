@@ -33,6 +33,10 @@ Script for [Tampermonkey](https://www.tampermonkey.net) or [Userscripts](https:/
 
 [tampermonkey-ajou-sso-theme.user.js](tampermonkey-ajou-sso-theme.user.js)
 
+## Roadmap
+
+- [ ] Github Actions for automated generation for tampermonkey script.
+
 ## Disclaimer
 
 This extension do not collect or send any data. Inserted codes are only replacing assets in html or applying css.
