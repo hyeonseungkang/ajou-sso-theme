@@ -14,6 +14,14 @@ The extension detects url which starts with sso.ajou.ac.kr. If it starts, theme 
 Theme application code are reveal under repo.
 - https://github.com/hyeonseungkang/ajou-sso-theme .
 
+## For Safari or other browser users
+
+Script for [Tampermonkey](https://www.tampermonkey.net) or [Userscripts](https://apps.apple.com/kr/app/userscripts/id1463298887) is on this repo. Script has same code and functions with extension.
+
+[tampermonkey-ajou-sso-theme.user.js](tampermonkey-ajou-sso-theme.user.js)
+
+## Disclaimer
+
 This extension do not collect or send any data. Inserted codes are only replacing assets in html or applying css.
 
 Feel free make any issues.
