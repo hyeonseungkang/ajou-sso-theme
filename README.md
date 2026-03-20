@@ -1,4 +1,9 @@
 # Modern Ajou SSO Theme
+<a href="https://chromewebstore.google.com/detail/icelkcckfhcdflcbnjceoociplajlhbc">
+<img src="https://img.shields.io/chrome-web-store/rating/icelkcckfhcdflcbnjceoociplajlhbc">
+<br>
+<img src="assets/206x58-chrome-web-bcb82d15b2486.png">
+</a>
 
 > Substitute old Ajou University login page with modern theme.
 
