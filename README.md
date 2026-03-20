@@ -13,5 +13,5 @@ This extension do not collect or send any data. Inserted codes are only replacin
 
 Feel free make any issues.
 
-- 강현승<hyeonseungkang@outlook.com>
+- 강현승\<hyeonseungkang@outlook.com\>
   - 아주대학교 경영인텔리전스학과
