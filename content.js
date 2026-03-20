@@ -2,37 +2,49 @@ console.time('apply_theme_js');
 
 // 고해상도 배경 짤리는 문제
 // meta viewpoint 대체
-document.querySelector('head meta[name=viewport]').remove();
-const metaViewportElement = document.createElement('meta');
-metaViewportElement.content = "width=device-width, initial-scale=1.0, viewport-fit=cover";
-document.querySelector('head').appendChild(metaViewportElement);
+try {
+    document.querySelector('head meta[name=viewport]').remove();
+    const metaViewportElement = document.createElement('meta');
+    metaViewportElement.content = "width=device-width, initial-scale=1.0, viewport-fit=cover";
+    document.querySelector('head').appendChild(metaViewportElement);
+} catch (e) {
+    console.error('error while replace meta viewpoint')
+    console.error(e)
+}
 
-// 로그인 좌우 흰색 투명 배경
-document.querySelectorAll('.content, .pc-wrap, .login-wrap').forEach(v => v.style = 'background: none !important; background-color: none !important;');
-
-// 좌 공간 로고 삽입
-document.querySelector('.pc-wrap').innerHTML = `
+try {
+    // favicon 삽입
+    const faviconElement = document.createElement('link');
+    faviconElement.rel = "icon shortcut";
+    faviconElement.href = "https://portal.ajou.ac.kr/cmn/image/favicon.ico";
+    document.querySelector('head').appendChild(faviconElement);
+    // copyright 년도
+    const date = new Date();
+    document.querySelector('.bottom > ul > li.copy').innerText = `ⓒ ${date.getFullYear()} Ajou University`;
+    // 로그인 좌우 흰색 투명 배경 안 나오게
+    document.querySelectorAll('.content, .pc-wrap, .login-wrap').forEach(v => v.style = 'background: none !important; background-color: none !important;');
+    // 좌 공간 로고 삽입
+    document.querySelector('.pc-wrap').innerHTML = `
 <img src="https://portal.ajou.ac.kr/cmn/image/logo.png" width="80%" /><br>
 <span>연결된 세상, 협력하는 지성</span>
 `;
-
-//for english
-if (!String(navigator.language).includes('ko')) {
-    document.querySelector('div.bottom a').innerText = 'Privacy Policy';
-    document.querySelector('div.login-wrap li a:nth-child(1)').innerText = 'Sign up';
-    document.querySelector('div.login-wrap li:nth-child(2) a').innerText = 'Find ID/PW';
-    document.querySelector('div.login-wrap li:nth-child(3) a').innerText = 'Inquiry';
+} catch (e) {
+    console.log('error while replace html elements')
+    console.log(e)
 }
 
-// favicon 삽입
-const faviconElement = document.createElement('link');
-faviconElement.rel = "icon shortcut";
-faviconElement.href = "https://portal.ajou.ac.kr/cmn/image/favicon.ico";
-document.querySelector('head').appendChild(faviconElement);
-
-// copyright 년도
-const date = new Date();
-document.querySelector('.bottom > ul > li.copy').innerText = `ⓒ ${date.getFullYear()} Ajou University`;
+//for english
+try {
+    if (!String(navigator.language).includes('ko')) {
+        document.querySelector('div.bottom a').innerText = 'Privacy Policy';
+        document.querySelector('div.login-wrap li a:nth-child(1)').innerText = 'Sign up';
+        document.querySelector('div.login-wrap li:nth-child(2) a').innerText = 'Find ID/PW';
+        document.querySelector('div.login-wrap li:nth-child(3) a').innerText = 'Inquiry';
+    }
+} catch (e) {
+    console.error('error while apply language en')
+    console.error(e)
+}
 
 const styleValue = `
 /* 다크모드 대응 */
@@ -261,9 +273,14 @@ input::placeholder {
 }
 `;
 
-// css 삽입
-const styleElement = document.createElement('style');
-styleElement.innerHTML = styleValue;
-document.querySelector('head').appendChild(styleElement);
+try {
+    // css 삽입
+    const styleElement = document.createElement('style');
+    styleElement.innerHTML = styleValue;
+    document.querySelector('head').appendChild(styleElement);
+} catch (e) {
+    console.error('error while insert css')
+    console.error(e)
+}
 
 console.timeEnd('apply_theme_js');
