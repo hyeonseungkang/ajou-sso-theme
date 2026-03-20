@@ -15,7 +15,15 @@
 ## Screenshot
 ![sso_screenshot.png](assets/sso_screenshot.png)
 
-The extension detects url which starts with sso.ajou.ac.kr. If it starts, theme application code will insert to html.
+## Features
+
+- Add EN version to detect `navigator.language`
+- Light/Dark mode responsive
+- Little taste of neumorphism design
+
+## Summary
+
+The extension [detects](https://github.com/hyeonseungkang/ajou-sso-theme/blob/4480e31b453e35df4fcc99408123936aa499e1e1/manifest.json#L15) url which starts with `sso.ajou.ac.kr`. If it starts, [theme application code](content.js) will insert to html.
 Theme application code are reveal under repo.
 - https://github.com/hyeonseungkang/ajou-sso-theme .
 
@@ -34,3 +42,4 @@ Feel free make any issues.
 - Developer Hyeonseung Kang\<강 현승, hyeonseungkang@outlook.com\>
   - 아주대학교 경영인텔리전스학과
   - MIS, Ajou University
+- [History of this repo](HISTORY.md)
