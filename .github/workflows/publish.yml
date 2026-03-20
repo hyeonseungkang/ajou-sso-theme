@@ -64,8 +64,8 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          base: master
-          branch: deploy
-          title: "Auto PR: deploy to master"
+          base: deploy
+          branch: master
+          title: "Auto PR: master to deploy"
           body: "This pull request was created automatically to merge changes from deploy to master."
           draft: false
