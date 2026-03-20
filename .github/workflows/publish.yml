@@ -1,0 +1,45 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - deploy
+  pull_request:
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: write
+  pull-requests: write
+  actions: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    concurrency:
+      group: my-global-job
+      cancel-in-progress: true
+
+    strategy:
+      matrix:
+        node-version: [22.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Create tampermonkey script
+        run: |
+          npm start
+
+      - name: Create zip file with entire repo
+        run: |
+          zip -r dist/latest.zip ./

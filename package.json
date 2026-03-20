@@ -1,0 +1,20 @@
+{
+  "name": "ajou-sso-theme",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/hyeonseungkang/ajou-sso-theme",
+  "bugs": {
+    "url": "https://github.com/hyeonseungkang/ajou-sso-theme/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyeonseungkang/ajou-sso-theme.git"
+  },
+  "license": "MIT",
+  "author": "Hyeonseung Kang",
+  "type": "commonjs",
+  "main": "src/create-tampermonkey-script.js",
+  "scripts": {
+    "start": "node src/create-tampermonkey-script.js"
+  }
+}
