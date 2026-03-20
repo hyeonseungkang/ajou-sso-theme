@@ -5,7 +5,9 @@
 <img src="assets/206x58-chrome-web-bcb82d15b2486.png">
 </a>
 
+>
 > Substitute old Ajou University login page with modern theme.
+> 
 
 ## Screenshot
 ![sso_screenshot.png](assets/sso_screenshot.png)
