@@ -42,7 +42,7 @@ jobs:
 
       - name: Create zip file with entire repo
         run: |
-          zip -r dist/latest.zip ./ -x .git/
+          zip -r dist/latest.zip ./ -x .git/\*
 
       - name: Commit to deploy branch
         run: |
