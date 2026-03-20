@@ -13,6 +13,14 @@ try {
 }
 
 try {
+    // favicon 삽입
+    const faviconElement = document.createElement('link');
+    faviconElement.rel = "icon shortcut";
+    faviconElement.href = "https://portal.ajou.ac.kr/cmn/image/favicon.ico";
+    document.querySelector('head').appendChild(faviconElement);
+    // copyright 년도
+    const date = new Date();
+    document.querySelector('.bottom > ul > li.copy').innerText = `ⓒ ${date.getFullYear()} Ajou University`;
     // 로그인 좌우 흰색 투명 배경 안 나오게
     document.querySelectorAll('.content, .pc-wrap, .login-wrap').forEach(v => v.style = 'background: none !important; background-color: none !important;');
     // 좌 공간 로고 삽입
@@ -37,16 +45,6 @@ try {
     console.error('error while apply language en')
     console.error(e)
 }
-
-// favicon 삽입
-const faviconElement = document.createElement('link');
-faviconElement.rel = "icon shortcut";
-faviconElement.href = "https://portal.ajou.ac.kr/cmn/image/favicon.ico";
-document.querySelector('head').appendChild(faviconElement);
-
-// copyright 년도
-const date = new Date();
-document.querySelector('.bottom > ul > li.copy').innerText = `ⓒ ${date.getFullYear()} Ajou University`;
 
 const styleValue = `
 /* 다크모드 대응 */
