@@ -17,7 +17,7 @@ document.querySelector('.pc-wrap').innerHTML = `
 `;
 
 //for english
-if (navigator.language !== 'ko') {
+if (!String(navigator.language).includes('ko')) {
     document.querySelector('div.bottom a').innerText = 'Privacy Policy';
     document.querySelector('div.login-wrap li a:nth-child(1)').innerText = 'Sign up';
     document.querySelector('div.login-wrap li:nth-child(2) a').innerText = 'Find ID/PW';
