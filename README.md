@@ -1,6 +1,7 @@
 # Modern Ajou SSO Theme
 <a href="https://chromewebstore.google.com/detail/icelkcckfhcdflcbnjceoociplajlhbc">
-<img src="https://img.shields.io/chrome-web-store/rating/icelkcckfhcdflcbnjceoociplajlhbc">
+<img src="https://img.shields.io/chrome-web-store/v/icelkcckfhcdflcbnjceoociplajlhbc">
+<img src="https://img.shields.io/chrome-web-store/last-updated/icelkcckfhcdflcbnjceoociplajlhbc">
 <br>
 <img src="assets/206x58-chrome-web-bcb82d15b2486.png">
 </a>
