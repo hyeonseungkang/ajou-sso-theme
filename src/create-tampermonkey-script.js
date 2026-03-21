@@ -1,9 +1,24 @@
 const fs = require('node:fs')
 
-const tampermonkeyBoilerplateRaw = fs.readFileSync('assets/tampermonkey-boilerplate', 'utf-8');
-const contentRaw = fs.readFileSync('content.js', 'utf-8');
-const date = new Date();
+const paths = {
+    version: 'VERSION',
+    tampermonkeyBoilerplate: 'assets/tampermonkey-boilerplate',
+    contentJs: 'content.js',
+    tampermonkeyAjouSsoThemeUserJs: 'tampermonkey-ajou-sso-theme.user.js',
+    manifestJson: 'manifest.json'
+};
+
+const version = fs.readFileSync(paths.version, 'utf-8')
+
+const tampermonkeyBoilerplateBody = fs.readFileSync(paths.tampermonkeyBoilerplate, 'utf-8');
+const contentJsBody = fs.readFileSync(paths.contentJs, 'utf-8');
 fs.writeFileSync(
-    'tampermonkey-ajou-sso-theme.user.js',
-    tampermonkeyBoilerplateRaw.replace('#####VERSION#####', date.valueOf().toString()) + contentRaw
+    paths.tampermonkeyAjouSsoThemeUserJs,
+    tampermonkeyBoilerplateBody.replace('#####VERSION#####', version) + contentJsBody
+)
+
+const manifestJsonBody = fs.readFileSync(paths.manifestJson, 'utf-8');
+fs.writeFileSync(
+    manifestJsonBody,
+    manifestJsonBody.replace('#####VERSION#####', version) + contentJsBody
 )

@@ -15,6 +15,6 @@
   "type": "commonjs",
   "main": "src/create-tampermonkey-script.js",
   "scripts": {
-    "start": "node src/create-tampermonkey-script.js"
+    "start": "node src/version-control.js ; node src/create-tampermonkey-script.js"
   }
 }
