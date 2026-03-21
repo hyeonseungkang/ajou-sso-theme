@@ -35,7 +35,8 @@ Script for [Tampermonkey](https://www.tampermonkey.net) or [Userscripts](https:/
 
 ## Roadmap
 
-- [ ] Github Actions for automated generation for tampermonkey script.
+- [x] Github Actions for automated generation for tampermonkey script.
+- [x] Auto version control.
 
 ## Disclaimer
 
