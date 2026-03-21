@@ -19,6 +19,7 @@
 
 - Add EN version to detect `navigator.language`
 - Light/Dark mode responsive
+- Responsible design / Mobile Compatible design
 - Little taste of neumorphism design
 
 ## Summary
@@ -27,7 +28,7 @@ The extension [detects](https://github.com/hyeonseungkang/ajou-sso-theme/blob/44
 Theme application code are reveal under repo.
 - https://github.com/hyeonseungkang/ajou-sso-theme
 
-## For Safari or other browser users
+## For Safari, mobile or other browser users
 
 Script for [Tampermonkey](https://www.tampermonkey.net) or [Userscripts](https://apps.apple.com/kr/app/userscripts/id1463298887) is available in this repo. Script has same code and functions with extension.
 
