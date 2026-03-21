@@ -13,7 +13,7 @@
 > 
 
 ## Screenshot
-![sso_screenshot.png](assets/sso_screenshot.png)
+![ezgif-49ddd089ea9ad8dd.webp](assets/ezgif-49ddd089ea9ad8dd.webp)
 
 ## Features
 
@@ -25,11 +25,11 @@
 
 The extension [detects](https://github.com/hyeonseungkang/ajou-sso-theme/blob/4480e31b453e35df4fcc99408123936aa499e1e1/manifest.json#L15) url which starts with `sso.ajou.ac.kr`. If it starts, [theme application code](content.js) will insert to html.
 Theme application code are reveal under repo.
-- https://github.com/hyeonseungkang/ajou-sso-theme .
+- https://github.com/hyeonseungkang/ajou-sso-theme
 
 ## For Safari or other browser users
 
-Script for [Tampermonkey](https://www.tampermonkey.net) or [Userscripts](https://apps.apple.com/kr/app/userscripts/id1463298887) is on this repo. Script has same code and functions with extension.
+Script for [Tampermonkey](https://www.tampermonkey.net) or [Userscripts](https://apps.apple.com/kr/app/userscripts/id1463298887) is available in this repo. Script has same code and functions with extension.
 
 [tampermonkey-ajou-sso-theme.user.js](tampermonkey-ajou-sso-theme.user.js)
 

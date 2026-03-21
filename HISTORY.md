@@ -15,6 +15,6 @@ Made shadow around login box so it looks like corner of car window. Design from 
 - Jan 9, 2025
   - End of Service in Army
 - March 20, 2026
-  - Gist script to [Chrome Extension - Modern Ajou SSO Theme](https://chromewebstore.google.com/detail/icelkcckfhcdflcbnjceoociplajlhbc)
-- March 00, 2026
-  - [Chrome Extension - Modern Ajou SSO Theme](https://chromewebstore.google.com/detail/icelkcckfhcdflcbnjceoociplajlhbc) passed examination
+  - Migration Gist script to [Chrome Extension - Modern Ajou SSO Theme](https://chromewebstore.google.com/detail/icelkcckfhcdflcbnjceoociplajlhbc)
+- March 21, 2026
+  - [Chrome Extension - Modern Ajou SSO Theme](https://chromewebstore.google.com/detail/icelkcckfhcdflcbnjceoociplajlhbc) passed publish review
