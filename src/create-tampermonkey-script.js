@@ -20,5 +20,5 @@ fs.writeFileSync(
 const manifestJsonBody = fs.readFileSync(paths.manifestJson, 'utf-8');
 fs.writeFileSync(
     paths.manifestJson,
-    manifestJsonBody.replace('#####VERSION#####', version) + contentJsBody
+    manifestJsonBody.replace('#####VERSION#####', version)
 )
