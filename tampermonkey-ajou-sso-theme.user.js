@@ -3,7 +3,7 @@
 // @description  Apply ajou sso login page theme.
 // @match        *://sso.ajou.ac.kr/*
 // @author       Hyeonseung Kang <@hyeonseungkang>
-// @version      1.2
+// @version      1.3
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=ajou.ac.kr
 // @grant        none
 // @inject-into  content
